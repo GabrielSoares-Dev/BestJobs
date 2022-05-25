@@ -14,7 +14,11 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     color:#ffff;
 }
-
+a{
+    &:hover{
+        color:#ffff;
+    }
+}
 `;
 
 export default GlobalStyle;
