@@ -1,30 +1,65 @@
-import React from 'react';
-import { Button } from '@mui/material'
+import React, { useState } from 'react';
+import { Drawer, message } from 'antd'
+import { useMediaQuery, Grid } from '@mui/material';
+import { MenuOutlined } from '@ant-design/icons';
 import * as Styled from './styles';
-import { styled } from '@mui/material/styles';
+import * as UI from './stylesui';
 
 
-const CustomButton = styled(Button)({
-    color: 'white',
-    borderColor:'white',
-    width:'50px',
-    '&:hover': {
-        color: 'white',
-        backgroundColor: 'linear-gradient(90deg, rgba(59,187,160,1) 36%, rgba(45,119,167,1) 100%)',
-      },
-})
 const NavBar: React.FC = () => {
+    const [visible, SetVisible] = useState(false);
+    const HandleOps = () => {
+        return message.error({
+            content: 'OPS!! Volte novamente mais tarde.',
+            style: {
+                fontWeight: 'bold',
+            }
+        })
+    }
+    const match = useMediaQuery('(max-width:600px)');
+
     return (
-        <Styled.ContainerNav>
-                <Styled.ContainerBrand>
-                    <Styled.Brand>Ceunsp</Styled.Brand>
-                </Styled.ContainerBrand>
-                <Styled.ContainerLinks>
-                    <Styled.Links>Cadastrar</Styled.Links>
-                    <Styled.Links>Torne-se um prestador</Styled.Links>
-                    <CustomButton variant="outlined">Login</CustomButton>
-                </Styled.ContainerLinks>
-        </Styled.ContainerNav >
+        <>
+            {!match ? (
+                <Styled.ContainerNav>
+                    <Styled.ContainerBrand>
+                        <Styled.Brand onClick={HandleOps}>Ceunsp</Styled.Brand>
+                    </Styled.ContainerBrand>
+                    <Styled.ContainerLinks>
+                        <Styled.Links onClick={HandleOps}>Cadastrar</Styled.Links>
+                        <Styled.Links onClick={HandleOps}>Torne-se um prestador</Styled.Links>
+                        <UI.CustomButton onClick={HandleOps} variant="outlined">Login</UI.CustomButton>
+                    </Styled.ContainerLinks>
+                </Styled.ContainerNav >
+            ) : (
+                <Styled.ContainerNavMobile>
+                    <Styled.ContainerMenu>
+                        <MenuOutlined
+                            onClick={() => SetVisible(true)}
+                            style={UI.MenuButton} />
+                    </Styled.ContainerMenu>
+                    <Styled.ContainerBrandMobile>
+                        <Styled.BrandMobile onClick={HandleOps}>Ceunsp</Styled.BrandMobile>
+                    </Styled.ContainerBrandMobile>
+                    <Drawer
+                        bodyStyle={UI.Drawer}
+                        placement='left'
+                        visible={visible}
+                        onClose={() => SetVisible(false)}>
+                        <Grid container flexDirection='column'>
+                            <Styled.LinksMobile onClick={HandleOps}>Cadastrar</Styled.LinksMobile>
+                            <Styled.LinksMobile onClick={HandleOps}>Torne-se um prestador</Styled.LinksMobile>
+                            <Styled.ContainerButtonMobile>
+                                <UI.CustomButton onClick={HandleOps} variant="outlined">Login</UI.CustomButton>
+                            </Styled.ContainerButtonMobile>
+
+                        </Grid>
+                    </Drawer>
+                </Styled.ContainerNavMobile>
+
+            )}
+        </>
+
     )
 
 }

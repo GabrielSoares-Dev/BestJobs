@@ -10,7 +10,7 @@ html{
 body{
     height:100%;
     width:100%;
-    background:#fffff;
+    background:#ffff;
     font-family: 'Josefin Sans', sans-serif;
     color:#ffff;
 }
