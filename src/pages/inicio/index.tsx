@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import NavBar from '../../components/layouts/navbar';
-import Search from 'antd/lib/input/Search';
+import { Button } from '../../components/button';
+import { Grid } from '@mui/material';
 import * as Ui from './stylesui';
 import Estrutura from '../../components/layouts/estrutura';
-import { message } from 'antd';
+import { Message } from '../../utils/messages';
+import { Input } from '../../components/Input';
+import * as Styled from './styles';
 
 
 
@@ -13,29 +15,31 @@ const InitialPage: React.FC = () => {
         SetLoading(true);
         setTimeout(() => {
             SetLoading(false);
-
-        }, 2000);
-        setTimeout(() => {
-            message.error({
-                content: 'OPS!! Não está disponivel Volte novamente mais tarde.',
-                style: {
-                    fontWeight: 'bold',
-                }
-            })
-        }, 2000)
+            Message('error', 'OPS!! Falhou volte novamente mais tarde')
+        }, 1000);
 
 
     }
     return (
-        <Estrutura active={Loading}  >
-            <Search
-                placeholder='Venha'
-                style={Ui.InputCustom}
-                size="large"
-                enterButton="Pesquisar"
-
-            />
-            <button onClick={HandleLoading}>test</button>
+        <Estrutura active={Loading} >
+            <Grid
+                container
+                alignItems="center"
+                flexDirection="column"
+                justifyContent="center"
+                marginTop={10}>
+                <Grid width={370} xs={12} md={12} item>
+                    <Styled.Title>
+                       Os melhores serviços <Styled.Italic>freelance</Styled.Italic>  você acha aqui.
+                    </Styled.Title>
+                </Grid>
+                <Grid xs={12} md={12} marginBottom={1} item>
+                    <Input />
+                </Grid>
+                <Grid xs={12} md={12} item>
+                    <Button onClick={HandleLoading}>Pesquisar</Button>
+                </Grid>
+            </Grid>
         </Estrutura>
     )
 }
