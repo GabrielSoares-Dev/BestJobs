@@ -8,13 +8,19 @@ import * as UI from './stylesui';
 
 const NavBar: React.FC = () => {
     const [visible, SetVisible] = useState(false);
+    const [loader, SetLoader] = useState(false);
     const HandleOps = () => {
-        return message.error({
+        SetLoader(true);
+        setTimeout(()=>{
+          SetLoader(false);
+          message.error({
             content: 'OPS!! Volte novamente mais tarde.',
             style: {
                 fontWeight: 'bold',
             }
         })
+        },2000)
+    
     }
     const match = useMediaQuery('(max-width:600px)');
 
@@ -55,6 +61,7 @@ const NavBar: React.FC = () => {
 
                         </Grid>
                     </Drawer>
+    
                 </Styled.ContainerNavMobile>
 
             )}
