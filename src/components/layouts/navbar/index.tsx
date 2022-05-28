@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
             {!match ? (
                 <Styled.ContainerNav>
                     <Styled.ContainerBrand>
-                        <Styled.Brand onClick={HandleOps}>Ceunsp</Styled.Brand>
+                        <Styled.Brand onClick={HandleOps}>BestJobs</Styled.Brand>
                     </Styled.ContainerBrand>
                     <Styled.ContainerLinks>
                         <Styled.Links onClick={HandleOps}>Cadastrar</Styled.Links>
@@ -45,7 +45,7 @@ const NavBar: React.FC = () => {
                             style={UI.MenuButton} />
                     </Styled.ContainerMenu>
                     <Styled.ContainerBrandMobile>
-                        <Styled.BrandMobile onClick={HandleOps}>Ceunsp</Styled.BrandMobile>
+                        <Styled.BrandMobile onClick={HandleOps}>BestJobs</Styled.BrandMobile>
                     </Styled.ContainerBrandMobile>
                     <Drawer
                         bodyStyle={UI.Drawer}

@@ -25,7 +25,6 @@ const InitialPage: React.FC = () => {
         }, 2000)
 
 
-
     }
     return (
         <Estrutura active={Loading}  >
