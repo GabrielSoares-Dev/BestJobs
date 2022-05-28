@@ -28,7 +28,7 @@ const InitialPage: React.FC = () => {
                 flexDirection="column"
                 justifyContent="center"
                 marginTop={10}>
-                <Grid width={370} xs={12} md={12} item>
+                <Grid width={340} xs={12} md={12} item>
                     <Styled.Title>
                        Os melhores serviços <Styled.Italic>freelance</Styled.Italic>  você acha aqui.
                     </Styled.Title>
