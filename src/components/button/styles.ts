@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const CustomButton = styled.button`
 font-weight:bold;
 color:#ffff;
-width:366px;
+width:26vw;
 height:48px;
 background:linear-gradient(90deg, rgba(59,187,160,1) 36%, rgba(45,119,167,1) 100%);
 font-size:21px;
