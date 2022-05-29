@@ -11,18 +11,18 @@ const NavBar: React.FC = () => {
     const [loader, SetLoader] = useState(false);
     const HandleOps = () => {
         SetLoader(true);
-        setTimeout(()=>{
-          SetLoader(false);
-          message.error({
-            content: 'OPS!! Volte novamente mais tarde.',
-            style: {
-                fontWeight: 'bold',
-            }
-        })
-        },2000)
-    
+        setTimeout(() => {
+            SetLoader(false);
+            message.error({
+                content: 'OPS!! Volte novamente mais tarde.',
+                style: {
+                    fontWeight: 'bold',
+                }
+            })
+        }, 2000)
+
     }
-    const match = useMediaQuery('(max-width:600px)');
+    const match = useMediaQuery('(max-width:650px)');
 
     return (
         <>
@@ -61,10 +61,11 @@ const NavBar: React.FC = () => {
 
                         </Grid>
                     </Drawer>
-    
+
                 </Styled.ContainerNavMobile>
 
-            )}
+            )
+            }
         </>
 
     )

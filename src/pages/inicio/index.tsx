@@ -24,19 +24,24 @@ const InitialPage: React.FC = () => {
         <Estrutura active={Loading} >
             <Grid
                 container
-                alignItems="center"
                 flexDirection="column"
-                justifyContent="center"
+                alignItems='center'
                 marginTop={10}>
                 <Grid width={340} xs={12} md={12} item>
                     <Styled.Title>
-                       Os melhores serviços <Styled.Italic>freelance</Styled.Italic>  você acha aqui.
+                        Os melhores serviços <Styled.Italic>freelance</Styled.Italic>  você acha aqui.
                     </Styled.Title>
                 </Grid>
-                <Grid xs={12} md={12} marginBottom={1} item>
+                <Grid
+                    xl={4}
+                    md={8}
+                
+                    marginBottom={1}
+                    item
+                >
                     <Input />
                 </Grid>
-                <Grid xs={12} md={12} item>
+                <Grid xs={12} md={4} item>
                     <Button onClick={HandleLoading}>Pesquisar</Button>
                 </Grid>
             </Grid>
