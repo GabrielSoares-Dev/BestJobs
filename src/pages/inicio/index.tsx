@@ -5,6 +5,7 @@ import * as Ui from './stylesui';
 import Estrutura from '../../components/layouts/estrutura';
 import { Message } from '../../utils/messages';
 import { Input } from '../../components/Input';
+import Categoria from '../../components/categoria';
 import * as Styled from './styles';
 
 
@@ -35,7 +36,6 @@ const InitialPage: React.FC = () => {
                 <Grid
                     xl={4}
                     md={8}
-                
                     marginBottom={1}
                     item
                 >
@@ -45,6 +45,10 @@ const InitialPage: React.FC = () => {
                     <Button onClick={HandleLoading}>Pesquisar</Button>
                 </Grid>
             </Grid>
+   
+           
+                <Categoria />
+
         </Estrutura>
     )
 }
