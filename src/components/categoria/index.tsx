@@ -13,13 +13,18 @@ const Categoria: React.FC = () => {
         >
             <Grid
                 item
-                xs
                 display='flex'
                 justifyContent='center'
-                flexDirection='column'
                 alignItems='center'
             >
                 <Styled.CategoriaTitle>Categorias de serviços</Styled.CategoriaTitle>
+            </Grid>
+            <Grid
+                display='flex'
+                justifyContent='center'
+                item
+                xs
+            >
                 <Styled.CustomDivider />
             </Grid>
             <Grid
@@ -28,7 +33,7 @@ const Categoria: React.FC = () => {
                 flexDirection='row'
                 marginTop={2}
                 justifyContent='center'
-                xs={12}
+
             >
                 <Grid
                     item
@@ -38,8 +43,8 @@ const Categoria: React.FC = () => {
                     width={105}
 
                 >
-                    <Styled.Icon />
-                    <Styled.TextCategoria>Manutenção em geral</Styled.TextCategoria>
+                    <Styled.IconManutencao />
+                    <Styled.TextCategoria>Manutenção</Styled.TextCategoria>
 
                 </Grid>
                 <Grid
@@ -49,7 +54,7 @@ const Categoria: React.FC = () => {
                     display='flex'
                     width={105}
                 >
-                    <Styled.Icon />
+                    <Styled.IconAula />
                     <Styled.TextCategoria>Aulas</Styled.TextCategoria>
 
                 </Grid>
@@ -60,7 +65,7 @@ const Categoria: React.FC = () => {
                     display='flex'
                     width={105}
                 >
-                    <Styled.Icon />
+                    <Styled.IconTec />
                     <Styled.TextCategoria>Tecnologia</Styled.TextCategoria>
 
                 </Grid>
@@ -71,8 +76,8 @@ const Categoria: React.FC = () => {
                     display='flex'
                     width={105}
                 >
-                    <Styled.Icon />
-                    <Styled.TextCategoria>Serviços domésticos</Styled.TextCategoria>
+                    <Styled.IconCarro />
+                    <Styled.TextCategoria>Automóveis</Styled.TextCategoria>
 
                 </Grid>
                 <Grid
@@ -82,7 +87,7 @@ const Categoria: React.FC = () => {
                     display='flex'
                     width={105}
                 >
-                    <Styled.Icon />
+                    <Styled.IconConsulto/>
                     <Styled.TextCategoria>Consultoria</Styled.TextCategoria>
 
                 </Grid>
@@ -93,9 +98,8 @@ const Categoria: React.FC = () => {
                     display='flex'
                     width={105}
                 >
-                    <Styled.Icon />
-                    <Styled.TextCategoria>Manutenção em geral</Styled.TextCategoria>
-
+                    <Styled.IconBox />
+                    <Styled.TextCategoria>Entregas</Styled.TextCategoria>
                 </Grid>
             </Grid>
         </Grid>

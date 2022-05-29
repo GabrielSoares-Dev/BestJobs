@@ -16,8 +16,10 @@ const InitialPage: React.FC = () => {
         SetLoading(true);
         setTimeout(() => {
             SetLoading(false);
-            Message('error', 'OPS!! Falhou volte novamente mais tarde')
-        }, 1000);
+            Message('error', 'OPS!! Falhou volte novamente mais tarde',{
+                fontWeight:'bold',
+            })
+        }, 2000);
 
 
     }
