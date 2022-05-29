@@ -120,7 +120,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
             </Grid>
             <Grid
                 item
-                marginTop={3}
+                marginTop={1}
             >
                 <Styled.CategoriaNav onClick={onClick}>Ver todas categorias</Styled.CategoriaNav>
             </Grid>
