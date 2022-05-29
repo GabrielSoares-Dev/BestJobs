@@ -13,9 +13,7 @@ const Categoria: React.FC = () => {
         >
             <Grid
                 item
-                display='flex'
-                justifyContent='center'
-                alignItems='center'
+                marginBottom={-3}
             >
                 <Styled.CategoriaTitle>Categorias de serviços</Styled.CategoriaTitle>
             </Grid>
@@ -28,7 +26,7 @@ const Categoria: React.FC = () => {
                 <Styled.CustomDivider />
             </Grid>
             <Grid
-                gap={3}
+                gap={1}
                 container
                 flexDirection='row'
                 marginTop={2}
@@ -41,6 +39,8 @@ const Categoria: React.FC = () => {
                     justifyContent='center'
                     display='flex'
                     width={105}
+                    sm={3}
+                    lg={2}
 
                 >
                     <Styled.IconManutencao />
@@ -53,45 +53,55 @@ const Categoria: React.FC = () => {
                     justifyContent='center'
                     display='flex'
                     width={105}
+                    sm={3}
+                    lg={2}
                 >
                     <Styled.IconAula />
                     <Styled.TextCategoria>Aulas</Styled.TextCategoria>
 
                 </Grid>
                 <Grid
+                    sm={3}
                     item
                     flexDirection='column'
                     justifyContent='center'
                     display='flex'
                     width={105}
+                    lg={2}
                 >
                     <Styled.IconTec />
                     <Styled.TextCategoria>Tecnologia</Styled.TextCategoria>
 
                 </Grid>
                 <Grid
+                    sm={3}
                     item
                     flexDirection='column'
                     justifyContent='center'
                     display='flex'
                     width={105}
+                    lg={2}
                 >
                     <Styled.IconCarro />
                     <Styled.TextCategoria>Automóveis</Styled.TextCategoria>
 
                 </Grid>
                 <Grid
+                    sm={3}
                     item
                     flexDirection='column'
                     justifyContent='center'
                     display='flex'
                     width={105}
+                    lg={2}
                 >
-                    <Styled.IconConsulto/>
+                    <Styled.IconConsulto />
                     <Styled.TextCategoria>Consultoria</Styled.TextCategoria>
 
                 </Grid>
                 <Grid
+                    sm={3}
+                    lg={2}                    
                     item
                     flexDirection='column'
                     justifyContent='center'
