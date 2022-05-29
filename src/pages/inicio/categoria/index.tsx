@@ -1,8 +1,12 @@
 import { Grid } from '@mui/material';
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import * as Styled from './styles';
 
-const Categoria: React.FC = () => {
+interface Props {
+    onClick: React.MouseEventHandler<HTMLAnchorElement>
+}
+
+const Categoria: React.FC<Props> = ({ onClick }) => {
 
     return (
         <Grid
@@ -40,7 +44,7 @@ const Categoria: React.FC = () => {
                     display='flex'
                     width={105}
                     sm={3}
-                    lg={2}
+                    lg={3}
 
                 >
                     <Styled.IconManutencao />
@@ -54,7 +58,7 @@ const Categoria: React.FC = () => {
                     display='flex'
                     width={105}
                     sm={3}
-                    lg={2}
+                    lg={3}
                 >
                     <Styled.IconAula />
                     <Styled.TextCategoria>Aulas</Styled.TextCategoria>
@@ -67,7 +71,7 @@ const Categoria: React.FC = () => {
                     justifyContent='center'
                     display='flex'
                     width={105}
-                    lg={2}
+                    lg={3}
                 >
                     <Styled.IconTec />
                     <Styled.TextCategoria>Tecnologia</Styled.TextCategoria>
@@ -80,7 +84,7 @@ const Categoria: React.FC = () => {
                     justifyContent='center'
                     display='flex'
                     width={105}
-                    lg={2}
+                    lg={3}
                 >
                     <Styled.IconCarro />
                     <Styled.TextCategoria>Automóveis</Styled.TextCategoria>
@@ -93,7 +97,7 @@ const Categoria: React.FC = () => {
                     justifyContent='center'
                     display='flex'
                     width={105}
-                    lg={2}
+                    lg={3}
                 >
                     <Styled.IconConsulto />
                     <Styled.TextCategoria>Consultoria</Styled.TextCategoria>
@@ -101,7 +105,7 @@ const Categoria: React.FC = () => {
                 </Grid>
                 <Grid
                     sm={3}
-                    lg={2}                    
+                    lg={3}
                     item
                     flexDirection='column'
                     justifyContent='center'
@@ -111,6 +115,14 @@ const Categoria: React.FC = () => {
                     <Styled.IconBox />
                     <Styled.TextCategoria>Entregas</Styled.TextCategoria>
                 </Grid>
+
+
+            </Grid>
+            <Grid
+                item
+                marginTop={3}
+            >
+                <Styled.CategoriaNav onClick={onClick}>Ver todas categorias</Styled.CategoriaNav>
             </Grid>
         </Grid>
     )
