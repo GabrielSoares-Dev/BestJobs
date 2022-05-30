@@ -1,5 +1,5 @@
-import { Grid } from '@mui/material';
-import React, { MouseEvent } from 'react';
+import { Grid, useMediaQuery } from '@mui/material';
+import React from 'react';
 import * as Styled from './styles';
 
 interface Props {
@@ -7,11 +7,11 @@ interface Props {
 }
 
 const Categoria: React.FC<Props> = ({ onClick }) => {
-
+    const match = useMediaQuery('(max-width:650px)');
     return (
         <Grid
             container
-            marginTop={5}
+            marginTop={match ? 5 : 38}
             flexDirection='column'
             alignItems='center'
         >

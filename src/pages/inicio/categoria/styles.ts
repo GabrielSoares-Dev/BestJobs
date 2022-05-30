@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { Divider } from 'antd';
 import {
-SettingOutlined,
-LaptopOutlined,
-CarOutlined,
-TeamOutlined,
-DropboxOutlined,
-BulbOutlined 
+    SettingOutlined,
+    LaptopOutlined,
+    CarOutlined,
+    TeamOutlined,
+    DropboxOutlined,
+    BulbOutlined
 } from '@ant-design/icons';
 
 
@@ -15,7 +15,7 @@ color:rgba(59,187,160,1);
 font-size:28px;
 transition-duration:0.5s;
 cursor: pointer;
-&:hover{
+&:hover {
     color:#000;
 }
 `;
@@ -68,7 +68,10 @@ cursor: pointer;
 export const CustomDivider = styled(Divider)`
 background-color:rgba(59,187,160,1);
 height:5px;
-width:80vw;
+width:70vw;
+@media (max-width:650px){
+    width:90vw; 
+}
 `;
 
 export const CategoriaTitle = styled.p`
@@ -85,14 +88,17 @@ font-weight:bold;
 text-align:center;
 margin-top:10px;
 
+
 `;
 
 export const CategoriaNav = styled.a`
 color:rgba(59,187,160,1);
 font-size:24px;
 font-weight:bold;
+transition-duration:0.5s;
+cursor: pointer;
 &:hover{
-    color:rgba(59,187,160,1);
+    color:#000;
 }
 
 `;
