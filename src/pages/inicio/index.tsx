@@ -23,14 +23,14 @@ const InitialPage: React.FC = () => {
         }, 2000);
     };
 
-    const match = useMediaQuery('(max-width:650px)');
+    const match = useMediaQuery('(max-width:800px)');
     return (
         <Estrutura active={Loading} >
             <Grid
                 container
                 flexDirection="column"
                 alignItems={match ? 'center' : ''}
-                marginTop={match ? 10 : 20}
+                marginTop={match ? 8 : 10}
             >
                 <Grid
                     marginLeft={match ? 0 : 5}
@@ -39,13 +39,13 @@ const InitialPage: React.FC = () => {
                 >
                     <Styled.Title>
                         Os melhores serviços <Styled.Italic>freelance</Styled.Italic>  você acha aqui.
-
                     </Styled.Title>
                     {!match &&
                         <Styled.PessoaImg
                             src={pessoa}
                             alt='pessoa' />}
                 </Grid>
+
                 {match ? (
                     <>
                         <Grid
@@ -54,7 +54,7 @@ const InitialPage: React.FC = () => {
                             marginBottom={1}
                             item
                         >
-                            <InputCustom />
+                            <InputCustom dimension='small' />
                         </Grid>
                         <Grid xs={12} md={4} item>
                             <Button onClick={HandleLoading}>Pesquisar</Button>
@@ -65,11 +65,10 @@ const InitialPage: React.FC = () => {
                         marginLeft={5}
                         item
                     >
-                        <Styled.SearchCustom
-                            placeholder="Procure pelo seu profissional"
-                            size='large'
-                            enterButton="Search"
-                        />
+                        <InputCustom dimension='medium' />
+                        <Styled.CustomButton style={{ cursor: 'pointer' }} type="button" onClick={HandleLoading}>
+                            Pesquisar
+                        </Styled.CustomButton>
                     </Grid>
                 )
                 }

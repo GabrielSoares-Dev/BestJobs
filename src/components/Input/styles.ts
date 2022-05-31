@@ -4,7 +4,6 @@ export const  CustomInput  = styled.input`
 background-color:#ffff;
 border:1px solid rgba(59,187,160,1);
 font-size:18px;
-width:90vw;
 box-shadow:none;
 color:#000;
 font-weight:bold;

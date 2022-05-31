@@ -81,7 +81,7 @@ font-weight:bold;
 
 `;
 
-export const TextCategoria = styled.p`
+export const TextCategoria = styled.a`
 color:#000;
 font-size:18px;
 font-weight:bold;

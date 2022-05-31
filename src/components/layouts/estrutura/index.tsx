@@ -7,8 +7,8 @@ const Estrutura: React.FC<IEstruturaProps> = ({ active, children }) => {
 
     return (
         <>
-            <NavBar />
-            {active ? <Spinner/> : children}
+            <NavBar />   
+                {active ? <Spinner /> : children}
         </>
     )
 

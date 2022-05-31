@@ -1,5 +1,5 @@
-import { Grid, useMediaQuery } from '@mui/material';
 import React from 'react';
+import { Grid, useMediaQuery } from '@mui/material';
 import * as Styled from './styles';
 
 interface Props {
@@ -11,7 +11,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
     return (
         <Grid
             container
-            marginTop={match ? 5 : 38}
+            marginTop={match ? 22 : 32}
             flexDirection='column'
             alignItems='center'
         >
@@ -37,20 +37,22 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
                 justifyContent='center'
 
             >
-                <Grid
-                    item
-                    flexDirection='column'
-                    justifyContent='center'
-                    display='flex'
-                    width={105}
-                    sm={3}
-                    lg={3}
+        
+                    <Grid
+                        item
+                        flexDirection='column'
+                        justifyContent='center'
+                        display='flex'
+                        width={105}
+                        sm={3}
+                        lg={3}
 
-                >
-                    <Styled.IconManutencao />
-                    <Styled.TextCategoria>Manutenção</Styled.TextCategoria>
+                    >
+                        <Styled.IconTec />
+                        <Styled.TextCategoria>Tecnologia</Styled.TextCategoria>
+                    </Grid>
+    
 
-                </Grid>
                 <Grid
                     item
                     flexDirection='column'
@@ -73,8 +75,9 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
                     width={105}
                     lg={3}
                 >
-                    <Styled.IconTec />
-                    <Styled.TextCategoria>Tecnologia</Styled.TextCategoria>
+                    <Styled.IconManutencao />
+                    <Styled.TextCategoria>Manutenção</Styled.TextCategoria>
+
 
                 </Grid>
                 <Grid
