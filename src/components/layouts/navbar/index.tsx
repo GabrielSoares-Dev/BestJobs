@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Drawer, message } from 'antd'
 import { useMediaQuery, Grid } from '@mui/material';
 import { MenuOutlined } from '@ant-design/icons';
+import logo from '../../../image/logo.png'
 import * as Styled from './styles';
 import * as UI from './stylesui';
 
@@ -29,7 +30,10 @@ const NavBar: React.FC = () => {
             {!match ? (
                 <Styled.ContainerNav>
                     <Styled.ContainerBrand>
-                        <Styled.Brand onClick={HandleOps}>BestJobs</Styled.Brand>
+                        <Styled.Brand onClick={HandleOps}>
+                        <Styled.LogoCustom src={logo} alt="logo" />
+                            BestJobs
+                            </Styled.Brand>
                     </Styled.ContainerBrand>
                     <Styled.ContainerLinks>
                         <Styled.Links onClick={HandleOps}>Cadastrar</Styled.Links>
@@ -45,7 +49,10 @@ const NavBar: React.FC = () => {
                             style={UI.MenuButton} />
                     </Styled.ContainerMenu>
                     <Styled.ContainerBrandMobile>
-                        <Styled.BrandMobile onClick={HandleOps}>BestJobs</Styled.BrandMobile>
+                        <Styled.BrandMobile onClick={HandleOps}>
+                            <Styled.LogoCustom src={logo} alt="logo" />
+                            BestJobs
+                            </Styled.BrandMobile>
                     </Styled.ContainerBrandMobile>
                     <Drawer
                         bodyStyle={UI.Drawer}

@@ -11,7 +11,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
     return (
         <Grid
             container
-            marginTop={match ? 22 : 32}
+            marginTop={match ? 10 : 32}
             flexDirection='column'
             alignItems='center'
         >

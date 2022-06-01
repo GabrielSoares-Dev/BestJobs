@@ -27,6 +27,7 @@ font-size:30px;
 font-weight:bold;
 margin-left:40px;
 color:#ffff;
+margin-top:100px;
 `;
 export const BrandMobile = styled.a`
 font-size:30px;
@@ -65,5 +66,11 @@ margin-right:20px;
 export const ContainerButtonMobile =  styled.div`
 margin-left:4px;
 margin-top:10px;
+
+`;
+
+export const LogoCustom = styled.img`
+width:40px;
+height:40px;
 
 `;
