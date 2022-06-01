@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Message } from '../../utils/messages';
 import Estrutura from '../../components/layouts/estrutura';
+import { Grid } from '@mui/material';
+import CardCategory from '../../components/cardspagecategory';
+import { Breadcrumbs } from '@mui/material'
+import * as Styled from './styles';
 
 
 const PageCategory: React.FC = () => {
@@ -17,7 +21,27 @@ const PageCategory: React.FC = () => {
 
     return (
         <Estrutura active={Loading}>
-            <h1>test</h1>
+            <Grid
+                marginLeft={5}
+                marginTop={10}
+                flexDirection='column'
+                container>
+                <Grid item>
+                    <Breadcrumbs aria-label="breadcrumb">
+                        <Styled.LinkCustom to='/'>BestJobs</Styled.LinkCustom>
+                        <Styled.LinkCustom to='/'>Categorias</Styled.LinkCustom>
+                    </Breadcrumbs>
+                </Grid>
+                <Grid
+                    item
+                >
+                    <Styled.Title>Tecnologia</Styled.Title>
+                </Grid>
+                <Grid>
+                    <CardCategory />
+                </Grid>
+            </Grid>
+
         </Estrutura>
     )
 }
