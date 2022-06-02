@@ -10,8 +10,23 @@ interface Props {
 const Categoria: React.FC<Props> = ({ onClick }) => {
     const match = useMediaQuery('(max-width:650px)');
     const navigate = useNavigate()
-    function HandleNavigate() {
-        return navigate('/category')
+    function HandleNavigateAula() {
+        return navigate('/category/aulas')
+    }
+
+    function HandleNavigateConsultoria() {
+        return navigate('/category/consultorias')
+    }
+
+    function HandleNavigateAuto() {
+        return navigate('/category/automoveis')
+    }
+
+    function HandleNavigateTec() {
+        return navigate('/category/tecnologias')
+    }
+    function HandleNavigateManu() {
+        return navigate('/category/manutencao')
     }
     return (
         <Grid
@@ -44,7 +59,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
             >
 
                 <Grid
-                    onClick={HandleNavigate}
+                    onClick={HandleNavigateTec}
                     item
                     flexDirection='column'
                     justifyContent='center'
@@ -60,6 +75,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
 
 
                 <Grid
+                    onClick={HandleNavigateAula}
                     item
                     flexDirection='column'
                     justifyContent='center'
@@ -73,6 +89,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
 
                 </Grid>
                 <Grid
+                    onClick={HandleNavigateManu}
                     sm={3}
                     item
                     flexDirection='column'
@@ -87,6 +104,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
 
                 </Grid>
                 <Grid
+                    onClick={HandleNavigateAuto}
                     sm={3}
                     item
                     flexDirection='column'
@@ -100,6 +118,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
 
                 </Grid>
                 <Grid
+                    onClick={HandleNavigateConsultoria}
                     sm={3}
                     item
                     flexDirection='column'

@@ -14,7 +14,7 @@ export const PessoaImg = styled.img`
 width:50vw;
 left:48%;
 position:absolute;
-bottom:15%;
+bottom:130px;
 
 `;
 
@@ -32,10 +32,4 @@ border:none;
 position:relative;
 right:20px;
 top:1px
-`;
-
-export const ContainerBackground =  styled.div`
-background:#2F7DA7;
-heigth:10px
-widht:100%;
 `;
