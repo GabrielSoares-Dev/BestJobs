@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Drawer, message } from 'antd'
 import { useMediaQuery, Grid } from '@mui/material';
 import { MenuOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../../image/logo.png'
 import * as Styled from './styles';
 import * as UI from './stylesui';
@@ -10,6 +11,7 @@ import * as UI from './stylesui';
 const NavBar: React.FC = () => {
     const [visible, SetVisible] = useState(false);
     const [loader, SetLoader] = useState(false);
+    const navigate = useNavigate();
     const HandleOps = () => {
         SetLoader(true);
         setTimeout(() => {
@@ -30,10 +32,10 @@ const NavBar: React.FC = () => {
             {!match ? (
                 <Styled.ContainerNav>
                     <Styled.ContainerBrand>
-                        <Styled.Brand onClick={HandleOps}>
-                        <Styled.LogoCustom src={logo} alt="logo" />
+                        <Styled.Brand onClick={() => navigate('/')}>
+                            <Styled.LogoCustom src={logo} alt="logo" />
                             BestJobs
-                            </Styled.Brand>
+                        </Styled.Brand>
                     </Styled.ContainerBrand>
                     <Styled.ContainerLinks>
                         <Styled.Links onClick={HandleOps}>Cadastrar</Styled.Links>
@@ -52,7 +54,7 @@ const NavBar: React.FC = () => {
                         <Styled.BrandMobile onClick={HandleOps}>
                             <Styled.LogoCustom src={logo} alt="logo" />
                             BestJobs
-                            </Styled.BrandMobile>
+                        </Styled.BrandMobile>
                     </Styled.ContainerBrandMobile>
                     <Drawer
                         bodyStyle={UI.Drawer}

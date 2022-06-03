@@ -87,6 +87,9 @@ font-size:18px;
 font-weight:bold;
 text-align:center;
 margin-top:10px;
+&:hover{
+    color:#000;
+}
 
 
 `;
