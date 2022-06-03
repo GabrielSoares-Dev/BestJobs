@@ -8,42 +8,42 @@ import aula6 from '../image/categoriasimg/aulas/aula6.png';
 export const Aulas = [
     {
         name: 'Gabriel',
-        description: 'Vou fornecer aulas de xadrez divertidas.',
+        description: 'Cursos em gerais de alta qualidade  para você.',
         star: 4,
         price: '100,00',
         img: aula1
     },
     {
-        name: 'Julio',
-        description: 'Vou oferecer treinamento vocal profissional e aulas de canto.',
+        name: 'Julio Professor',
+        description: 'Venha aprender a utilizar o Blender nas minhas Aulas.',
         star: 2,
         price: '150,00',
         img: aula2
     },
     {
-        name: 'Felipe',
+        name: 'Felipe Professor',
         description: 'Vou ajudar em aulas, cursos, aulas e projetos online.',
         star: 5,
         price: '130,00',
         img: aula3
     },
     {
-        name: 'Gustavo',
-        description: 'Farei  cursos e aulas online.',
+        name: 'School Online',
+        description: 'Aprenda direto da sua casa com nossos cursos online.',
         star: 1,
         price: '100,00',
         img: aula4
     },
     {
-        name: 'Marcos',
-        description: 'Farei aulas de blender, suporte a projetos e aulas teóricas.',
+        name: 'Marcos Cantor',
+        description: 'Vou oferecer treinamento vocal profissional e aulas de canto.',
         star: 5,
         price: '90,00',
         img: aula5
     },
     {
-        name: 'Mario',
-        description: 'Vou criar um plano de aula pré-escolar de alta qualidade.',
+        name: 'Maria',
+        description: 'Vou fornecer aulas de xadrez divertidas.',
         star: 4,
         price: '90,00',
         img: aula6

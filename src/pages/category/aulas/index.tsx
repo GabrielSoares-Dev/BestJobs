@@ -24,11 +24,13 @@ const PageCategoryAulas: React.FC = () => {
     return (
         <Estrutura active={Loading}>
             <Grid
-                marginLeft={5}
+
                 marginTop={10}
                 flexDirection='column'
                 container>
-                <Grid item>
+                <Grid
+                    marginLeft={5}
+                    item>
                     <Breadcrumbs aria-label="breadcrumb">
                         <Styled.LinkCustom to='/'>BestJobs</Styled.LinkCustom>
                         <Styled.LinkCustom to='/'>Categorias</Styled.LinkCustom>
@@ -36,6 +38,7 @@ const PageCategoryAulas: React.FC = () => {
                     </Breadcrumbs>
                 </Grid>
                 <Grid
+                    marginLeft={5}
                     item
                 >
                     <Styled.Title>Aulas</Styled.Title>
@@ -44,9 +47,11 @@ const PageCategoryAulas: React.FC = () => {
                     gap={3}
                     alignItems='center'
                     container
+                    justifyContent='center'
                 >
                     {Aulas.map((element) => (
                         <Grid
+
                             flexDirection='row'
                             item key={element.name}>
                             <CardCategory

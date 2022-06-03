@@ -7,43 +7,43 @@ import manu6 from '../image/categoriasimg/manutencao/manu6.png';
 
 export const Manutencoes = [
     {
-        name: 'Gabriel',
-        description: 'Vou fornecer aulas de xadrez divertidas.',
-        star: 4,
-        price: '100,00',
+        name: 'Contracting',
+        description: 'Venha fazer um orçamento para a manutenção da sua casa.',
+        star: 2,
+        price: '5000,00',
         img: manu1
     },
     {
-        name: 'Julio',
-        description: 'Vou oferecer treinamento vocal profissional e aulas de canto.',
-        star: 2,
-        price: '150,00',
+        name: 'Felipe Eletrics',
+        description: 'Faço a fiação da sua casa/prédio completo.',
+        star: 4,
+        price: '500,00',
         img: manu2
     },
     {
-        name: 'Felipe',
-        description: 'Vou ajudar em aulas, cursos, aulas e projetos online.',
-        star: 5,
-        price: '130,00',
+        name: 'Maria Engenheira',
+        description: 'Produzo a planta da sua nova casa por um preço barato.',
+        star: 2,
+        price: '4000,00',
         img: manu3
     },
     {
-        name: 'Gustavo',
-        description: 'Farei  cursos e aulas online.',
-        star: 1,
-        price: '100,00',
+        name: 'Gustavo Eletricista',
+        description: 'Produzo a planta elétrica do seu edificio.',
+        star: 4,
+        price: '3000,00',
         img: manu4
     },
     {
-        name: 'Marcos',
-        description: 'Farei aulas de blender, suporte a projetos e aulas teóricas.',
+        name: 'Marcos Marido de Aluguel',
+        description: 'Faço qualquer conserto na sua casa.',
         star: 5,
-        price: '90,00',
+        price: '300,00',
         img: manu5
     },
     {
-        name: 'Mario',
-        description: 'Vou criar um plano de aula pré-escolar de alta qualidade.',
+        name: 'Mario Eletric',
+        description: 'Venha fazer um orçamento para a sua casa.',
         star: 4,
         price: '90,00',
         img: manu6

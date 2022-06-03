@@ -7,43 +7,43 @@ import tec6 from '../image/categoriasimg/tecnologia/tec6.png';
 
 export const Tecnologias = [
     {
-        name: 'Gabriel',
-        description: 'Vou fornecer aulas de xadrez divertidas.',
+        name: 'Python Tecnologia',
+        description: 'Vamos produzir automações maravilhosas.',
         star: 4,
         price: '100,00',
         img: tec1
     },
     {
-        name: 'Julio',
-        description: 'Vou oferecer treinamento vocal profissional e aulas de canto.',
-        star: 2,
-        price: '150,00',
+        name: 'Micro Focus',
+        description: 'Eu vou ensinar como se programar em Cobol.',
+        star: 4,
+        price: '200,00',
         img: tec2
     },
     {
-        name: 'Felipe',
-        description: 'Vou ajudar em aulas, cursos, aulas e projetos online.',
+        name: 'Felipe Cursos',
+        description: 'Vou te ensinar Java, C, C++ ,C# e .NET.',
         star: 5,
         price: '130,00',
         img: tec3
     },
     {
-        name: 'Gustavo',
-        description: 'Farei  cursos e aulas online.',
-        star: 1,
-        price: '100,00',
+        name: 'Socket Programming',
+        description: 'Vou te ensinar  programar em redes e C++.',
+        star: 2,
+        price: '140,00',
         img: tec4
     },
     {
-        name: 'Marcos',
-        description: 'Farei aulas de blender, suporte a projetos e aulas teóricas.',
-        star: 5,
-        price: '90,00',
+        name: 'Windows Programs',
+        description: 'Vou te ensinar a  criar um programa útil para o Windows.',
+        star: 4,
+        price: '400,00',
         img: tec5
     },
     {
-        name: 'Mario',
-        description: 'Vou criar um plano de aula pré-escolar de alta qualidade.',
+        name: 'Samuel Tec',
+        description: 'Vamos fazer qualquer projeto  em Java e várias outras linguagens.',
         star: 4,
         price: '90,00',
         img: tec6

@@ -7,43 +7,43 @@ import consul6 from '../image/categoriasimg/consultoria/consul6.png';
 
 export const Consultorias = [
     {
-        name: 'Gabriel',
-        description: 'Vou fornecer aulas de xadrez divertidas.',
-        star: 4,
-        price: '100,00',
+        name: 'Amazon Sell',
+        description: 'Aprenda a ganhar dinheiro utilizando os serviços da amazon.',
+        star: 3,
+        price: '400,00',
         img: consul1
     },
     {
-        name: 'Julio',
-        description: 'Vou oferecer treinamento vocal profissional e aulas de canto.',
-        star: 2,
-        price: '150,00',
+        name: 'Julio Coach',
+        description: 'Venha aprender a mudar totalmente a sua vida.',
+        star: 4,
+        price: '500,00',
         img: consul2
     },
     {
-        name: 'Felipe',
-        description: 'Vou ajudar em aulas, cursos, aulas e projetos online.',
+        name: 'Biotechnology Consultant',
+        description: 'Venha ampliar seus conhecimentos em Biotecnologia.',
         star: 5,
-        price: '130,00',
+        price: '300,00',
         img: consul3
     },
     {
-        name: 'Gustavo',
-        description: 'Farei  cursos e aulas online.',
-        star: 1,
-        price: '100,00',
+        name: 'Expert Business',
+        description: 'Venha  definir o rumo da sua vida e saia da depressão.',
+        star: 4,
+        price: '400,00',
         img: consul4
     },
     {
-        name: 'Marcos',
-        description: 'Farei aulas de blender, suporte a projetos e aulas teóricas.',
+        name: 'Build Coaching Consulting',
+        description: 'Aprenda a ganhar dinheiro construindo websites.',
         star: 5,
         price: '90,00',
         img: consul5
     },
     {
-        name: 'Mario',
-        description: 'Vou criar um plano de aula pré-escolar de alta qualidade.',
+        name: 'Gabrielle Consult',
+        description: 'Venha evoluir seu inglês, através da minha mentoria.',
         star: 4,
         price: '90,00',
         img: consul6

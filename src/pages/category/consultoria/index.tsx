@@ -24,11 +24,11 @@ const PageCategoryConsultoria: React.FC = () => {
     return (
         <Estrutura active={Loading}>
             <Grid
-                marginLeft={5}
+
                 marginTop={10}
                 flexDirection='column'
                 container>
-                <Grid item>
+                <Grid marginLeft={5} item>
                     <Breadcrumbs aria-label="breadcrumb">
                         <Styled.LinkCustom to='/'>BestJobs</Styled.LinkCustom>
                         <Styled.LinkCustom to='/'>Categorias</Styled.LinkCustom>
@@ -36,6 +36,7 @@ const PageCategoryConsultoria: React.FC = () => {
                     </Breadcrumbs>
                 </Grid>
                 <Grid
+                    marginLeft={5}
                     item
                 >
                     <Styled.Title>Consultorias</Styled.Title>
@@ -44,6 +45,7 @@ const PageCategoryConsultoria: React.FC = () => {
                     gap={3}
                     alignItems='center'
                     container
+                    justifyContent='center'
                 >
                     {Consultorias.map((element) => (
                         <Grid

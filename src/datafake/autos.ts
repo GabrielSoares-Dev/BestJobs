@@ -7,45 +7,45 @@ import auto6 from '../image/categoriasimg/automoveis/auto6.png';
 
 export const Automoveis = [
     {
-        name: 'Gabriel',
-        description: 'Vou fornecer aulas de xadrez divertidas.',
+        name: 'Weast Racing',
+        description: 'Carros irados e super carros disponiveis para você.',
         star: 4,
-        price: '100,00',
+        price: '1000,00',
         img: auto1
     },
     {
-        name: 'Julio',
-        description: 'Vou oferecer treinamento vocal profissional e aulas de canto.',
+        name: 'Automotive Tagline Here',
+        description: 'Super carros a disposição para qualquer carro.',
         star: 2,
-        price: '150,00',
+        price: '2000,00',
         img: auto2
     },
     {
-        name: 'Felipe',
-        description: 'Vou ajudar em aulas, cursos, aulas e projetos online.',
+        name: 'SaltoCar',
+        description: 'Preços que cabem no seu bolso e carro de ótima qualidade.',
         star: 5,
-        price: '130,00',
+        price: '3000,00',
         img: auto3
     },
     {
-        name: 'Gustavo',
-        description: 'Farei  cursos e aulas online.',
+        name: 'Garage Door Store',
+        description: 'Serviços de armazenagem de carros a sua disposição.',
         star: 1,
-        price: '100,00',
+        price: '9000,00',
         img: auto4
     },
     {
-        name: 'Marcos',
-        description: 'Farei aulas de blender, suporte a projetos e aulas teóricas.',
+        name: 'Carbon Fiber Racing',
+        description: 'Motos de corrida, para todos os gostos a sua disposição.',
         star: 5,
-        price: '90,00',
+        price: '4000,00',
         img: auto5
     },
     {
-        name: 'Mario',
-        description: 'Vou criar um plano de aula pré-escolar de alta qualidade.',
+        name: 'Lip Perfomance',
+        description: 'Super Carros , para vencer suas disputas.',
         star: 4,
-        price: '90,00',
+        price: '3000,00',
         img: auto6
     },
 
