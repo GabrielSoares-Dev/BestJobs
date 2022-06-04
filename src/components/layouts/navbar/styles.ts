@@ -48,7 +48,7 @@ flex-direction:row;
 export const ContainerBrand =  styled.div`
 `;
 export const ContainerBrandMobile =  styled.div`
-margin-left:25%;
+margin-left:20%;
 
 `;
 export const ContainerMenu=  styled.div`
