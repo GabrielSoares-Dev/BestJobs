@@ -11,11 +11,13 @@ import * as Styled from '../styles';
 
 const PageCategoryAulas: React.FC = () => {
     const [Loading, SetLoading] = useState(false);
+    const [visible, SetVisible] = useState(false);
     const HandleLoading = () => {
         SetLoading(true);
+        SetVisible(false);
         setTimeout(() => {
             SetLoading(false);
-            Message('error', 'OPS!! Falhou volte novamente mais tarde', {
+            Message('error', 'Sistema indisponível volte mais tarde', {
                 fontWeight: 'bold',
             })
         }, 2000);
@@ -23,6 +25,9 @@ const PageCategoryAulas: React.FC = () => {
 
     return (
         <Estrutura
+            onClickFechar={() => SetVisible(false)}
+            onClickAbrir={() => SetVisible(true)}
+            open={visible}
             onClicks={HandleLoading}
             onClicksButton={HandleLoading}
             active={Loading}>

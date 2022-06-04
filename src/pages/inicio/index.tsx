@@ -13,11 +13,13 @@ import * as Styled from './styles';
 
 const InitialPage: React.FC = () => {
     const [Loading, SetLoading] = useState(false);
+    const [visible, SetVisible] = useState(false);
     const HandleLoading = () => {
         SetLoading(true);
+        SetVisible(false);
         setTimeout(() => {
             SetLoading(false);
-            Message('error', 'OPS!! Falhou volte novamente mais tarde', {
+            Message('error', 'Sistema indisponível volte mais tarde', {
                 fontWeight: 'bold',
             })
         }, 2000);
@@ -26,6 +28,9 @@ const InitialPage: React.FC = () => {
     const match = useMediaQuery('(max-width:800px)');
     return (
         <Estrutura
+            onClickFechar={() => SetVisible(false)}
+            onClickAbrir={() => SetVisible(true)}
+            open={visible}
             active={Loading}
             onClicks={HandleLoading}
             onClicksButton={HandleLoading}
@@ -37,6 +42,7 @@ const InitialPage: React.FC = () => {
                 marginTop={match ? 8 : 10}
             >
                 <Grid
+                    marginTop={match ? 0 : 7}
                     marginLeft={match ? 0 : 5}
                     width={340}
                     item
@@ -46,6 +52,7 @@ const InitialPage: React.FC = () => {
                     </Styled.Title>
                     {!match &&
                         <Styled.PessoaImg
+
                             src={pessoa}
                             alt='pessoa' />}
                 </Grid>

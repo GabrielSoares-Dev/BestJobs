@@ -4,12 +4,12 @@ import Estrutura from '../../../components/layouts/estrutura';
 import { Grid } from '@mui/material';
 import CardCategory from '../../../components/cardspagecategory';
 import { Breadcrumbs } from '@mui/material'
-import { Manutencoes } from '../../../datafake/manu';
+import { Entregas } from '../../../datafake/entrega';
 import { Pagination } from 'antd';
 import * as Styled from '../styles';
 
 
-const PageCategoryManutencoes: React.FC = () => {
+const PageCategoryEntregas: React.FC = () => {
     const [Loading, SetLoading] = useState(false);
     const [visible, SetVisible] = useState(false);
     const HandleLoading = () => {
@@ -40,22 +40,22 @@ const PageCategoryManutencoes: React.FC = () => {
                     <Breadcrumbs aria-label="breadcrumb">
                         <Styled.LinkCustom to='/'>BestJobs</Styled.LinkCustom>
                         <Styled.LinkCustom to='/'>Categorias</Styled.LinkCustom>
-                        <Styled.LinkCustom to='/'>Manutenções</Styled.LinkCustom>
+                        <Styled.LinkCustom to='/'>Entregas</Styled.LinkCustom>
                     </Breadcrumbs>
                 </Grid>
                 <Grid
                     marginLeft={5}
                     item
                 >
-                    <Styled.Title>Manutenções</Styled.Title>
+                    <Styled.Title>Entregas</Styled.Title>
                 </Grid>
                 <Grid
                     gap={3}
                     alignItems='center'
-                    justifyContent='center'
                     container
+                    justifyContent='center'
                 >
-                    {Manutencoes.map((element) => (
+                    {Entregas.map((element) => (
                         <Grid
                             flexDirection='row'
                             item key={element.name}>
@@ -86,5 +86,5 @@ const PageCategoryManutencoes: React.FC = () => {
     )
 }
 
-export default PageCategoryManutencoes;
+export default PageCategoryEntregas;
 

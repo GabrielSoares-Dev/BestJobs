@@ -9,8 +9,14 @@ import * as UI from './stylesui';
 import { INavBarProps } from './type';
 
 
-const NavBar: React.FC<INavBarProps> = ({ onClicks, onClicksButton }) => {
-    const [visible, SetVisible] = useState(false);
+const NavBar: React.FC<INavBarProps> = (
+    { 
+    onClicks, 
+    onClicksButton,
+    onClickAbrir,
+    onClickFechar,
+    open = false
+}) => {
     const navigate = useNavigate();
 
     const match = useMediaQuery('(max-width:650px)');
@@ -21,10 +27,10 @@ const NavBar: React.FC<INavBarProps> = ({ onClicks, onClicksButton }) => {
                 <Styled.ContainerNav>
                     <Styled.ContainerBrand>
                         <Styled.Brand onClick={() => navigate('/')}>
-                        <Styled.LogoCustom src={logo} alt="logo" />
+                            <Styled.LogoCustom src={logo} alt="logo" />
                             BestJobs
                         </Styled.Brand>
-                        
+
                     </Styled.ContainerBrand>
                     <Styled.ContainerLinks>
                         <Styled.Links onClick={onClicks}>Cadastrar</Styled.Links>
@@ -36,21 +42,21 @@ const NavBar: React.FC<INavBarProps> = ({ onClicks, onClicksButton }) => {
                 <Styled.ContainerNavMobile>
                     <Styled.ContainerMenu>
                         <MenuOutlined
-                            onClick={() => SetVisible(true)}
+                            onClick={onClickAbrir}
                             style={UI.MenuButton} />
                     </Styled.ContainerMenu>
                     <Styled.ContainerBrandMobile>
                         <Styled.BrandMobile onClick={() => navigate('/')}>
-                        <Styled.LogoCustom src={logo} alt="logo" />
+                            <Styled.LogoCustom src={logo} alt="logo" />
                             BestJobs
                         </Styled.BrandMobile>
-                      
+
                     </Styled.ContainerBrandMobile>
                     <Drawer
                         bodyStyle={UI.Drawer}
                         placement='left'
-                        visible={visible}
-                        onClose={() => SetVisible(false)}>
+                        visible={open}
+                        onClose={onClickFechar}>
                         <Grid container flexDirection='column'>
                             <Styled.LinksMobile onClick={onClicks}>Cadastrar</Styled.LinksMobile>
                             <Styled.LinksMobile onClick={onClicks}>Torne-se um prestador</Styled.LinksMobile>

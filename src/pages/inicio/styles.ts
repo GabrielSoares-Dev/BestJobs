@@ -11,10 +11,10 @@ font-style:italic;
 
 
 export const PessoaImg = styled.img`
-width:50vw;
-left:48%;
 position:absolute;
-bottom:130px;
+right:0;
+top:100px;
+width:40vw;
 
 `;
 
@@ -31,5 +31,5 @@ font-weight:bold;
 border:none;
 position:relative;
 right:20px;
-top:1px
+top:0px
 `;

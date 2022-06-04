@@ -10,28 +10,12 @@ interface Props {
 const Categoria: React.FC<Props> = ({ onClick }) => {
     const match = useMediaQuery('(max-width:650px)');
     const navigate = useNavigate()
-    function HandleNavigateAula() {
-        return navigate('/category/aulas')
-    }
 
-    function HandleNavigateConsultoria() {
-        return navigate('/category/consultorias')
-    }
 
-    function HandleNavigateAuto() {
-        return navigate('/category/automoveis')
-    }
-
-    function HandleNavigateTec() {
-        return navigate('/category/tecnologias')
-    }
-    function HandleNavigateManu() {
-        return navigate('/category/manutencao')
-    }
     return (
         <Grid
             container
-            marginTop={match ? 10 : 32}
+            marginTop={match ? 10 : 24}
             flexDirection='column'
             alignItems='center'
         >
@@ -59,7 +43,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
             >
 
                 <Grid
-                    onClick={HandleNavigateTec}
+                    onClick={() => navigate('/category/tecnologias')}
                     item
                     flexDirection='column'
                     justifyContent='center'
@@ -75,7 +59,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
 
 
                 <Grid
-                    onClick={HandleNavigateAula}
+                    onClick={() => navigate('/category/aulas')}
                     item
                     flexDirection='column'
                     justifyContent='center'
@@ -89,7 +73,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
 
                 </Grid>
                 <Grid
-                    onClick={HandleNavigateManu}
+                    onClick={() => navigate('/category/manutencao')}
                     sm={3}
                     item
                     flexDirection='column'
@@ -104,7 +88,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
 
                 </Grid>
                 <Grid
-                    onClick={HandleNavigateAuto}
+                    onClick={() => navigate('/category/automoveis')}
                     sm={3}
                     item
                     flexDirection='column'
@@ -118,7 +102,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
 
                 </Grid>
                 <Grid
-                    onClick={HandleNavigateConsultoria}
+                    onClick={() => navigate('/category/consultorias')}
                     sm={3}
                     item
                     flexDirection='column'
@@ -132,6 +116,7 @@ const Categoria: React.FC<Props> = ({ onClick }) => {
 
                 </Grid>
                 <Grid
+                    onClick={() => navigate('/category/entregas')}
                     sm={3}
                     lg={3}
                     item
