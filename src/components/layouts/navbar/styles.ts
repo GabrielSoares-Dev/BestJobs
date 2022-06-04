@@ -72,5 +72,6 @@ margin-top:10px;
 export const LogoCustom = styled.img`
 width:40px;
 height:40px;
+margin-bottom:10px;
 
 `;

@@ -3,7 +3,7 @@ import { Drawer } from 'antd'
 import { useMediaQuery, Grid } from '@mui/material';
 import { MenuOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
-import logo from '../../../image/logo.png'
+import logo from '../../../image/logo192.png';
 import * as Styled from './styles';
 import * as UI from './stylesui';
 import { INavBarProps } from './type';
@@ -21,9 +21,10 @@ const NavBar: React.FC<INavBarProps> = ({ onClicks, onClicksButton }) => {
                 <Styled.ContainerNav>
                     <Styled.ContainerBrand>
                         <Styled.Brand onClick={() => navigate('/')}>
-                            <Styled.LogoCustom src={logo} alt="logo" />
+                        <Styled.LogoCustom src={logo} alt="logo" />
                             BestJobs
                         </Styled.Brand>
+                        
                     </Styled.ContainerBrand>
                     <Styled.ContainerLinks>
                         <Styled.Links onClick={onClicks}>Cadastrar</Styled.Links>
@@ -40,9 +41,10 @@ const NavBar: React.FC<INavBarProps> = ({ onClicks, onClicksButton }) => {
                     </Styled.ContainerMenu>
                     <Styled.ContainerBrandMobile>
                         <Styled.BrandMobile onClick={() => navigate('/')}>
-                            <Styled.LogoCustom src={logo} alt="logo" />
+                        <Styled.LogoCustom src={logo} alt="logo" />
                             BestJobs
                         </Styled.BrandMobile>
+                      
                     </Styled.ContainerBrandMobile>
                     <Drawer
                         bodyStyle={UI.Drawer}
