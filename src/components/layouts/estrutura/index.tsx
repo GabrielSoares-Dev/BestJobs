@@ -3,12 +3,12 @@ import Spinner from '../../spinner';
 import NavBar from '../navbar';
 import { IEstruturaProps } from './type';
 
-const Estrutura: React.FC<IEstruturaProps> = ({ active, children }) => {
+const Estrutura: React.FC<IEstruturaProps> = ({ active, onClicks, onClicksButton, children }) => {
 
     return (
         <>
-            <NavBar />   
-                {active ? <Spinner /> : children}
+            <NavBar onClicks={onClicks} onClicksButton={onClicksButton} />
+            {active ? <Spinner /> : children}
         </>
     )
 

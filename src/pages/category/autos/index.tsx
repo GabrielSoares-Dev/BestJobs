@@ -22,7 +22,10 @@ const PageCategoryAutomoveis: React.FC = () => {
     };
 
     return (
-        <Estrutura active={Loading}>
+        <Estrutura
+            onClicks={HandleLoading}
+            onClicksButton={HandleLoading}
+            active={Loading}>
             <Grid
 
                 marginTop={10}

@@ -22,15 +22,17 @@ const PageCategoryTecnologias: React.FC = () => {
     };
 
     return (
-        <Estrutura active={Loading}>
+        <Estrutura
+            onClicks={HandleLoading}
+            onClicksButton={HandleLoading}
+            active={Loading}>
             <Grid
-               
                 marginTop={10}
                 flexDirection='column'
                 container>
                 <Grid
-                marginLeft={5}
-                 item>
+                    marginLeft={5}
+                    item>
                     <Breadcrumbs aria-label="breadcrumb">
                         <Styled.LinkCustom to='/'>BestJobs</Styled.LinkCustom>
                         <Styled.LinkCustom to='/'>Categorias</Styled.LinkCustom>
@@ -38,7 +40,7 @@ const PageCategoryTecnologias: React.FC = () => {
                     </Breadcrumbs>
                 </Grid>
                 <Grid
-                 marginLeft={5}
+                    marginLeft={5}
                     item
                 >
                     <Styled.Title>Tecnologias</Styled.Title>

@@ -25,7 +25,11 @@ const InitialPage: React.FC = () => {
 
     const match = useMediaQuery('(max-width:800px)');
     return (
-        <Estrutura active={Loading} >
+        <Estrutura
+            active={Loading}
+            onClicks={HandleLoading}
+            onClicksButton={HandleLoading}
+        >
             <Grid
                 container
                 flexDirection="column"
