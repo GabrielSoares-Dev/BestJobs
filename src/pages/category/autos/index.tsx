@@ -71,6 +71,7 @@ const PageCategoryAutomoveis: React.FC = () => {
                     display='flex'
                     justifyContent='center'
                     marginTop={5}
+                    marginBottom={4}
                 >
                     <Pagination defaultCurrent={1} total={50} />
                 </Grid>

@@ -27,7 +27,6 @@ const PageCategoryAulas: React.FC = () => {
             onClicksButton={HandleLoading}
             active={Loading}>
             <Grid
-
                 marginTop={10}
                 flexDirection='column'
                 container>
@@ -74,6 +73,7 @@ const PageCategoryAulas: React.FC = () => {
                     display='flex'
                     justifyContent='center'
                     marginTop={5}
+                    marginBottom={4}
                 >
                     <Pagination defaultCurrent={1} total={50} />
                 </Grid>
