@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from '../../components/button';
 import { Grid, useMediaQuery } from '@mui/material';
-import * as Ui from './stylesui';
 import Estrutura from '../../components/layouts/estrutura';
 import { Message } from '../../utils/messages';
 import { InputCustom } from '../../components/Input';
